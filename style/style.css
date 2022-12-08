@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;}
+
+body{display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh; background-repeat: no-repeat;
+     background: linear-gradient(45deg,rgba(64, 152, 252, 0.61),rgba(1, 252, 218, 0.61),rgba(64, 152, 252, 0.61));}
+
+::selection{color: #fff;
+            background: rgb(64, 152, 252);}
+
+.wrapper{padding: 25px;
+         background: #ffffff;
+         border-radius: 20px;
+         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.384);}
+
+.icon{width: 350px; height: 150px; animation: anm 4s;
+      border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 102, 255, 0.384);
+      background-color: rgb(255, 255, 255);}
+
+.picon{font-size: 35px; text-align: center;
+       letter-spacing: 3px; z-index: 3;
+       padding-top: 30px;
+       font-weight: 600;
+       text-decoration: underline; }
+
+.iconimg1{width: 60px; display: inline-block;
+  margin-top: 80px; margin-left: 25px;
+  position: absolute;}
+
+.iconimg2{width: 60px; display: inline-block;
+          margin-top: 75px; margin-left: 250px; z-index: 1;
+          position: absolute;}
+
+
+.start{width: 90px; margin-top: 60px; margin-left: 130px; animation: anm 4s ; z-index: 3;}
+
+.pdev{font-size: 12px; display: inline-block; color: rgba(0, 0, 0, 0.644); position:relative; top: 330px; left: 220px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; z-index: 1;}
+ 
+@keyframes anm {0%{opacity: 0; } 100%{opacity: 1;}}
+
+@media screen and (max-width: 700px) {
+.icon{width: 300px;}
+.iconimg1{margin-left: 15px;}
+.iconimg2{margin-left: 230px;}
+.start{margin-left: 110px;}
+.pdev{left: 170px;}
+}
+
+
+@media screen and (max-width: 350px) {
+.icon{width: 250px;}
+.picon{font-size: 25px;}
+.iconimg1{margin-left: 10px;}
+.iconimg2{margin-left: 180px; margin-top: 63px;}
+.start{margin-left: 80px;}
+.pdev{left: 125px;}
+
+}
+
+@media screen and (max-width: 280px) {
+  .icon{width: 200px;}
+  .picon{font-size: 20px;}
+  .iconimg1{margin-left: 10px;}
+  .iconimg2{margin-left: 140px; margin-top: 63px;}
+  .start{margin-left: 60px;}
+  .pdev{left: 70px;}
+}
